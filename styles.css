@@ -57,7 +57,6 @@ body {
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: #f0f0f0;
 }
 
 .needle {
@@ -84,4 +83,35 @@ body {
 }
 
 .center-point {
+    background-color: #e74c3c;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.center-point::before {
+    content: '';
+    /* background-color: var(--primary-color); */
+    border: 1px dashed var(--primary-color);
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.center-point::after {
+    content: '';
+    background-color: var(--primary-color);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
