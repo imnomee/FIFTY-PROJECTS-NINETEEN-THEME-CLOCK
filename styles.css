@@ -95,7 +95,7 @@ body {
 .center-point::before {
     content: '';
     /* background-color: var(--primary-color); */
-    border: 1px dashed var(--primary-color);
+    border: 1px dashed #999;
     width: 230px;
     height: 230px;
     position: absolute;
@@ -114,4 +114,26 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+}
+
+.time {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.date {
+    font-size: 18px;
+    color: #aaa;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.date .circle {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
 }
